@@ -84,18 +84,13 @@ By the end of this course, you will:
   - Course goals, what we will build
   - Why learn LLMs from scratch?
   - Open-source vs closed-source models (GPT-4 vs LLaMA 3)
-  - Real-world career impact
 
 - **Lesson 0.2 — Core Concepts: Autoregression, Transformers, Pretraining vs Fine-tuning**
 
 - **Lesson 0.3 — Setting Up Your Deep Learning Environment**
 
-  - Python, PyTorch, `datasets`, `tiktoken`
+  - Python, PyTorch, `datasets`, `tiktoken`, `transformers`
   - GPU on Colab / Kaggle
-
-- **Lesson 0.4 — PyTorch Quick Refresher**
-  - Tensors, `nn.Module`, `autograd`, optimizers
-  - Simple MLP example
 
 ---
 
@@ -143,6 +138,11 @@ By the end of this course, you will:
 ---
 
 ### 📦 Module 3: The Attention Engine Room
+
+- **Lesson 3.0 — PyTorch Quick Refresher**
+
+  - Tensors, `nn.Module`, `autograd`, optimizers
+  - Simple MLP example
 
 - **Lesson 3.1 — Self-Attention: The Heart of Transformers**
 
