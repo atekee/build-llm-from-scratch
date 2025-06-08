@@ -1,15 +1,17 @@
 import json
 
+import torch
 
-class Tokenizer:
+
+class UstaTokenizer:
   def __init__(self, vocab_file):
     with open(vocab_file, "r") as f:
       self.vocab = json.load(f)
       self.reverse_vocab = {v: k for k, v in self.vocab.items()}
 
   def encode(self, text):
-    tokens = []
-    
+    tokens = [] 
+       
     for word in text.split():
       i = 0
       # example: states
@@ -30,7 +32,14 @@ class Tokenizer:
       tokens.append(self.vocab[" "])
 
     tokens.pop()
-    return tokens
+    return torch.tensor(tokens)
+  
+  def tokenize(self, text):
+    token_ids = self.encode(text)
+    # token_ids from tensor to list
+    token_ids = token_ids.detach().numpy().tolist()
+
+    return [self.reverse_vocab[id] for id in token_ids]
 
   def decode(self, ids):
     text = ""

@@ -1,5 +1,5 @@
 import torch
-from torch.utils.data import Dataset
+from torch.utils.data import DataLoader, Dataset
 
 pad_id = 63
 
@@ -36,8 +36,17 @@ class TextDataset(Dataset):
     return self.inputs[idx], self.targets[idx]
 
 
-
-
+def create_data_loader(token_ids: list, context_length: int, stride: int,
+                       batch_size: int, shuffle: bool = True, device: str = "cpu"):
+  dataset = TextDataset(token_ids, context_length, stride)
+  dataloader = DataLoader(
+      dataset,
+      batch_size=batch_size,
+      shuffle=shuffle,
+      generator=torch.Generator(device=device)
+    )
+  
+  return dataloader
 
 
   
