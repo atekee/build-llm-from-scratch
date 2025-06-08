@@ -19,3 +19,4 @@ class UstaSelfAttention(nn.Module):
     attention_scores = q @ k.T
     attention_weights = torch.softmax(attention_scores / k.shape[-1] ** 0.5, dim=1)
     return attention_weights @ v
+  
