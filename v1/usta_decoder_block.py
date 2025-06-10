@@ -1,8 +1,8 @@
 import torch.nn as nn
 
-from usta_layer_norm import UstaLayerNorm
-from usta_mlp import UstaMLP
-from usta_multi_head_attention import UstaMultiHeadAttention
+from .usta_layer_norm import UstaLayerNorm
+from .usta_mlp import UstaMLP
+from .usta_multi_head_attention import UstaMultiHeadAttention
 
 
 class UstaDecoderBlock(nn.Module):

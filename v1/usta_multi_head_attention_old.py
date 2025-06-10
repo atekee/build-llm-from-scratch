@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from usta_causal_attention import UstaCausalAttention
+from .usta_causal_attention import UstaCausalAttention
 
 
 class UstaMultiHeadAttention(nn.Module):
