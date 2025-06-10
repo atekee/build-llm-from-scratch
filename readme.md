@@ -1,5 +1,9 @@
 # 🎓 Mastering Large Language Models: Build Your Own LLM from Scratch
 
+Run first version of the model in colab:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1itWjR18elzBIKawGvc1cMpBzQu6i1ZmU?usp=sharing)
+
 ## 🧩 Course Subtitle: **Master the Architecture, Pretraining, and Fine-Tuning of Transformer-Based AI Systems**
 
 ---
