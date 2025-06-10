@@ -26,7 +26,7 @@ def load_model():
         )
         
         # Load the trained weights if available
-        model_path = "v1/u_model.pth"
+        model_path = "./u_model.pth"
         if os.path.exists(model_path):
             try:
                 u_model.load_state_dict(torch.load(model_path, map_location="cpu"))
