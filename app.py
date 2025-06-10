@@ -26,7 +26,16 @@ def load_model():
         )
         
         # Load the trained weights if available
-        model_path = "./u_model.pth"
+        # download pth file from https://github.com/malibayram/llm-from-scratch/blob/main/u_model.pth
+        # and save it in the same directory as this app.py file
+        model_path = "u_model.pth"
+
+        # download the pth file from the url
+        import requests
+        response = requests.get("https://github.com/malibayram/llm-from-scratch/blob/main/u_model.pth")
+        with open(model_path, "wb") as f:
+            f.write(response.content)
+
         if os.path.exists(model_path):
             try:
                 u_model.load_state_dict(torch.load(model_path, map_location="cpu"))
