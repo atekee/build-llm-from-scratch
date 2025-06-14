@@ -43,6 +43,7 @@ Run first version of the model in colab:
 - https://youtu.be/UU1WVnMk4E8
 - https://youtu.be/tFHeUSJAYbE?list=PLz-ep5RbHosU2hnz5ejezwaYpdMutMVB0
 - https://youtu.be/UPtG_38Oq8o?list=PLs8w1Cdi-zvalz9ltXmarqyeQ49wfKFqf
+- https://youtu.be/ZLbVdvOoTKM
 
 ## 📘 Course Description
 
